@@ -1,0 +1,28 @@
+namespace IlyaInnerjoin
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите слово(Объединяет две строки и считает кол-во - да в строке): ");
+
+            string f1 = Console.ReadLine();
+            string f2 = Console.ReadLine();
+
+            string f = f1 + " " + f2;
+
+            int count6 = 0;
+
+            for (int i = 0; i < f.Length - 1; i++)
+            {
+                if (f.Substring(i, 2) == "да")
+                {
+                    count6++;
+                }
+            }
+
+            Console.WriteLine("Комбинированная строка: " + f);
+            Console.WriteLine("Количество раз, когда появляется 'да', равно: " + count6);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+Console.WriteLine("Введите слово к заданию 8(Кол-во букв 'y' стоящих на чётных местах): ");
+
+string h = Console.ReadLine();
+int count8 = 0;
+
+for (int i = 0; i < h.Length; i += 2)
+{
+    if (h[i] == 'y')
+    {
+        count8++;
+    }
+}
